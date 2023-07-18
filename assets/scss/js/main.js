@@ -69,7 +69,7 @@ export const searchHandler = () => {
     if (lastSearch === textSearch.value) return
     lastSearch = textSearch.value
     if (!addSearch) movieList.innerHTML = ''
-    getData(`http://www.omdbapi.com/?apikey=6be33cc&s=${textSearch.value}`)
+    getData(`https://www.omdbapi.com/?apikey=6be33cc&s=${textSearch.value}`)
       .then(data => data.Search)
       .then(movies => movies.forEach(movie => addTolist(movie)))
       .catch(err => console.log(err.message))
