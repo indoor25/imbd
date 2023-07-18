@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+
+  text-transform: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.movie__list {
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+}
+.movie__content {
+  display: grid;
+}
+.movie__title {
+  text-align: center;
+}
+.movie__item {
+  display: grid;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.movie__link {
+  display: grid;
+  overflow: hidden;
+
+  width: 100%;
+  margin-bottom: 10px;
+
+  grid-template-rows: 400px minmax(0px, -webkit-min-content);
+  grid-template-rows: 400px minmax(0px, min-content);
+}
+.movie__img {
+  width: 100%;
+  height: 100%;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+}
+.movie__img:hover {
+  -webkit-transition: 1s;
+          transition: 1s;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.search__block {
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+.search__wrapper {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.search__label {
+  display: inline-block;
+
+  padding-bottom: 5px;
+
+  font-size: 1.2em;
+}
+.search__input {
+  width: 300px;
+  height: 30px;
+  margin-right: 10px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+}
+.search__btn {
+  height: 30px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+}
+
+.add__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+
+  gap: 5px;
+}
+.add__label {
+  display: inline-block;
+
+  font-size: 1.1em;
+}
+.add__check-box {
+  width: 20px;
+  height: 20px;
+}
